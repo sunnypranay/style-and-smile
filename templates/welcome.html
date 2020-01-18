@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+    $( function() {
+       $( "#datepicker,#datepicker-1" ).datepicker({  dateFormat: 'd MM, y' , minDate: 0});
+    } );
+  </script>
+        <script>
+    $( function() {
+       $( "#datepicker-2" ).datepicker({  dateFormat: 'd MM, y' , minDate: 0});
+    } );
+  </script>
+    <style>
+    #overlay , #overlay-1 {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    #text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 20px;
+      color: white;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+    }
+</style>
+</head>
+<body>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9EJdeCu-FkPMDH4-zDKM2ngPphFkfVEtuVaZ-n6zl1Hqk6Hq3" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Nail Art</h5>
+    <p class="card-text">Nail art is a creative way to paint, decorate, enhance, and embellish the nails. It is a type of artwork that can be done on fingernails and toenails, usually after manicures or pedicures.</p>
+    <a href="#" class="btn btn-primary"  onclick="on_1()" onclick="document.getElementById('a1').checked=true;">Click here to Book</a>
+  </div>
+</div>
+<br>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://i.pinimg.com/1200x/7b/04/cf/7b04cfee76c1bdbd087c6632ff0fa290.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Mehandi Design</h5>
+    <p class="card-text">Mehndi is a form of body art originating in ancient India, in which decorative designs are created on a person's body, using a paste, created from the powdered dry leaves of the henna plant (Lawsonia inermis).</p>
+    <a href="#" class="btn btn-primary"  onclick="on_2()" >Click here to Book</a>
+  </div>
+</div>
+<div id="overlay">
+  <div id="text">
+      <form action="" method="post" onsubmit="return validateForm()" name="myform">
+          <p>Date: <input type="text" id="datepicker" name="date"required autocomplete="off"></p>
+          <p>Time:
+          <select name="Time">
+          <option value="12:00 PM - 4:00 PM">12:00 PM - 4:00 PM</option>
+          <option value="6:00 PM - 8:00 PM">6:00 PM - 8:00 PM</option>
+              <option value="9:00 PM - 10:30 PM">9:00 PM - 10:30 PM</option>
+        </select>
+          </p>
+          <p>Check your category</p>
+          <input type="radio" name="design" value="Nail-Art" id="a1"> <label>Nail_art</label><br>
+
+          <input type="submit" value="submit" >
+      </form>
+  </div>
+</div>
+<div id="overlay-1">
+  <div id="text">
+      <form action="" method="post" onsubmit="return validateForm()" name="Mehendi">
+          <p>Date: <input type="text" id="datepicker-1" name="date"required autocomplete="off"></p>
+          <p>Time:
+          <select name="Time">
+          <option value="12:00 PM - 4:00 PM">12:00 PM - 4:00 PM</option>
+          <option value="6:00 PM - 8:00 PM">6:00 PM - 8:00 PM</option>
+              <option value="9:00 PM - 10:30 PM">9:00 PM - 10:30 PM</option>
+        </select>
+          </p>
+          <p>Select your category</p>
+          <select name="design">
+          <option value="Mehendi-Arabic">Mehendi-Arabic</option>
+          <option value="Mehendi-Complete-Hand">Mehendi-Complete-Hand</option>
+          <option value="Mehendi-One-Side">Mehendi-One-Side</option>
+              </select>
+          <input type="submit" value="submit" >
+      </form>
+  </div>
+</div>
+
+
+
+<script>
+function on_2() {
+  document.getElementById("overlay-1").style.display = "block";
+
+}
+function on_1() {
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById('a1').checked=true;
+}
+function off() {
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("overlay-1").style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design_preview</title>
+</head>
+<body>
+<div>
+    <p>Images</p>
+    {% for i in result %}
+        <img src="https://g-commerce-images.s3.ap-south-1.amazonaws.com/{{ i[0] }}" alt="" style="width:500px;height:600px;">
+    {% endfor %}
+    <p> Description </p>
+    {% for i in result_1 %}
+        <p> {{  i[0] }}</p>
+    {% endfor %}
+    <p>  Price </p>
+    {% for i in result_1 %}
+        <p> {{  i[1] }}</p>
+    {% endfor %}
+    <p>  Type  </p>
+    {% for i in result_1 %}
+        <p> {{  i[2] }}</p>
+    {% endfor %}
+    <form action="/design_confirm" method="post">
+        <input type="hidden" name = "product_id" value={{ product_id }}>
+        <input type="submit" value="submit">
+    </form>
+</div>
+</body>
+</html>

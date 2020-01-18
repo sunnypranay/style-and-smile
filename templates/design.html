@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design</title>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+{#    <script>#}
+        {#function myfunction() {#}
+    {#        $.post( "/dummy",#}
+    {#{ name: "John", time: "2pm" });#}
+    {#    }#}
+{#        function myfunction(product_images) {#}
+{#            alert(product_images)#}
+{#            document.getElementById("name").value = product_images;#}
+{#        }#}
+{#    </script>#}
+
+</head>
+<body>
+
+{% for i in d1 %}
+<div>
+    <p>Image : <img src="https://g-commerce-images.s3.ap-south-1.amazonaws.com/{{ d1[i]['images'][0] }}" alt=""></p>
+    <p>Design_type : {{ d1[i]["design_type"] }}</p>
+    <p>Price : {{ d1[i]["price"] }}</p>
+    <p>Name : {{ d1[i]["freelancer_name"] }}</p>
+
+   <form action="/design_preview" method="post">
+        <input type="hidden" name="product_id" value={{ i }} id="name">
+        <input type="submit"  value="Submit">
+    </form>
+{#    <button onclick="myfunction()">Click me</button>#}
+</div>
+<hr>
+{% endfor %}
+</body>
+</html>

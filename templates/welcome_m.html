@@ -1,0 +1,338 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+    /* @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');*/
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    </style>
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+    $( function() {
+       $( "#datepicker,#datepicker-1,#datepicker-2,#datepicker-3" ).datepicker({  dateFormat: 'd MM, y' , minDate: 0});
+    } );
+  </script>
+            <style>
+    #overlay , #overlay-1, #overlay-2, #overlay-3 {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    #text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 20px;
+      color: white;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+    }
+</style>
+    <style>
+        img{
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 100%;
+          }
+          .top-left {
+          position: absolute;
+          top: 35%; 
+          left: 10%;}
+          .top{
+            position: absolute;
+          top:140%; 
+          left: 10%;
+          }
+          .top-2{
+            position: absolute;
+          top: 220%; 
+          left: 10%;
+          }
+          .top-3{
+            position: absolute;
+          top: 370%; 
+          left: 10%;
+          }
+          .mb{
+              display:none;
+          }
+          .grad{
+            background-image: linear-gradient(to bottom right, rgba(204, 206, 207, 0.966), rgb(235, 239, 243));
+            padding: 2%;
+          }
+          .button{
+            background-color: rgba(167, 164, 164,0.5);
+          }
+          
+      @media only screen and (max-width: 700px){
+        img{
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 100%;
+          }
+          .mb{
+             background-color: rgba(112, 118, 119, 0.2);
+             display: block;
+             padding:2%;
+          }
+          .top-left {
+      
+            display: none;}
+            .top-2{
+              display: none;
+            }
+            .top{
+              display:none;
+            }
+            .top-3{
+              display:none;
+            }
+    }
+        </style>
+    </head>
+    <body>
+          <!-- nav bar -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/welcome">Style & Smile</a>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/welcome">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://forms.gle/zC8DiVDp9b9Bdpdq7" tabindex="-1" aria-disabled="true">Become a Free Lancer</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <a class="btn btn-outline-success my-2 my-sm-0" type="submit" href="/logout">Logout</a>
+              </form>
+            </div>
+          </nav>
+          <!-- nav bar ends -->
+          <h1 style="font-family: 'Raleway';  font-size: 35px">Welcome GITAMites!!! ❤️</h1>
+          <div class="image-wrapper">
+            <img src="https://g-commerce-images.s3.ap-south-1.amazonaws.com/website_images/nail.jpg" alt="image">
+              <div class="top-left" >
+                <p style="color:black; font-family: 'Raleway';"><b>Nails without sparkles are like <br> cakes without frosting! It's sad<br> that you're missing out on a lot being a hostler!<br> We understand this, so here's a<br> solution we've come up with. 🙂</b></p>
+                <button class="mdl-button mdl-js-button mdl-button--raised button" onclick="on_1()" onclick="document.getElementById('a1').checked=true;">
+                  Get your nails done now !
+                </button>
+                
+            </div>
+          </div>
+          <div class="mb">
+           <div style="text-align: center;"><p style=" color:black; font-family: 'Raleway';"><b>Nails without sparkles are like cakes without frosting!<br> It's sad that you're missing out on a lot being a hostler!<br> We understand this, so here's a solution we've come up with. 🙂</b></p>
+           <!-- Raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised button" onclick="on_1()" onclick="document.getElementById('a1').checked=true;">
+  Get your nails done now !
+</button></div>
+
+          </div>
+          <div class="image-wrapper">
+            <img src="https://g-commerce-images.s3.ap-south-1.amazonaws.com/website_images/mehandi.jpg" alt="image">
+            <div class="top">
+              <p style="color:black; font-family: 'Raleway';"><b>With the first line of Mehendi, she<br> forgot her troubles and delved into the<br>beautiful world of checkered patterns<br> and intricate lines. 🙂</b></p>
+              <button class="mdl-button mdl-js-button mdl-button--raised button" onclick="on_2()">
+                Get your mehendi done now !
+              </button>
+          </div>
+          </div>
+          <div class="mb">
+            <center><p style=" color:black; font-family: 'Raleway';"><b>With the first line of Mehendi, she<br> forgot her troubles and delved into the<br>beautiful world of checkered patterns <br>and intricate lines. 🙂</b></p>
+            <!-- Raised button -->
+ <button class="mdl-button mdl-js-button mdl-button--raised button" onclick="on_2()">
+   Get your mehendi done now !
+ </button></center>
+ 
+           </div>
+
+          <div class="image-wrapper">
+            <img src="https://g-commerce-images.s3.ap-south-1.amazonaws.com/website_images/hairstyle.jpg" alt="image">
+            <div class="top-2">
+              <p style="color:black; font-family: 'Raleway';"><b>The Hairstyle tells <br> whether or not a woman really <br>knows herself.🙂</b></p>
+              <button class="mdl-button mdl-js-button mdl-button--raised button button" onclick="on_3()">
+                Get your hair done now !
+              </button>
+          </div></div>
+          <div class="mb">
+            <center><p style=" color:black; font-family: 'Raleway';"><b>The Hairstyle tells <br> whether or not a woman really<br> knows herself. 🙂</b></p>
+            <!-- Raised button -->
+ <button class="mdl-button mdl-js-button mdl-button--raised button" onclick="on_3()">
+   Get your hair done now !
+ </button></center>
+          </div>
+          <div class="image-wrapper">
+            <img src="https://g-commerce-images.s3.ap-south-1.amazonaws.com/website_images/makeup-min.jpg" alt="image">
+            <div class="top-3">
+              <p style="color:black; font-family: 'Raleway';"><b>Your makeup should never precede you,<br> but walk with you instead. 🙂</b></p>
+              <button class="mdl-button mdl-js-button mdl-button--raised button" onclick="on_4()">
+                Get your makeup done now !
+              </button>
+          </div></div>
+          <div class="mb">
+            <center><p style=" color:black; font-family: 'Raleway';"><b>Your makeup should never precede you,<br> but walk with you instead. 🙂</b></p>
+            <!-- Raised button -->
+ <button class="mdl-button mdl-js-button mdl-button--raised button" onclick="on_4()">
+   Get your makeup done now !
+ </button></center></div>
+          <div class="grad">
+            <p style="color:black; font-family: 'Rubik'; font-size: 35px;"><b>About us:</b><br>
+              <p style="color:black; font-family: 'Rubik'; font-size: 20px;">We are a team of students in GITAM <br> and we aim to provide a platform to<br> showcase your talent <br> which is going to help the girl<br> hostelers to look beautiful !!!</p>
+          </div>
+          <div class="grad">
+            <p style="color:black; font-family: 'Rubik'; font-size: 35px;"><b>What we do ?</b></p>
+            <p style="color:black; font-family: 'Rubik'; font-size: 20px;">We provide the basic services for the girls<br> who stay in hostel and can not go out !<br>💅Nail Art<br>🤲Mehendi<br>💇‍♀️Hair Do<br>💄Make up</p>
+          </div>
+
+              <div id="overlay">
+  <div id="text">
+      <form action="" method="post" onsubmit="return validateForm()" name="myform">
+          <p>Date: <input type="text" id="datepicker" name="date"required autocomplete="off"></p>
+          <p>Time:
+          <select name="Time">
+          <option value="12:00 PM - 4:00 PM">12:00 PM - 4:00 PM</option>
+          <option value="6:00 PM - 8:00 PM">6:00 PM - 8:00 PM</option>
+              <option value="9:00 PM - 10:30 PM">9:00 PM - 10:30 PM</option>
+        </select>
+          </p>
+          <p>Check your category</p>
+          <input type="radio" name="design" value="Nail-Art" id="a1"> <label>Nail_art</label><br>
+
+          <input type="submit" value="submit" >
+      </form>
+  </div>
+</div>
+          <div id="overlay-1">
+  <div id="text">
+      <form action="" method="post" onsubmit="return validateForm()" name="Mehendi">
+          <p>Date: <input type="text" id="datepicker-1" name="date"required autocomplete="off"></p>
+          <p>Time:
+          <select name="Time">
+          <option value="12:00 PM - 4:00 PM">12:00 PM - 4:00 PM</option>
+          <option value="6:00 PM - 8:00 PM">6:00 PM - 8:00 PM</option>
+              <option value="9:00 PM - 10:30 PM">9:00 PM - 10:30 PM</option>
+        </select>
+          </p>
+          <p>Select your category</p>
+          <select name="design">
+          <option value="Mehendi-Arabic">Mehendi-Arabic</option>
+          <option value="Mehendi-Complete-Hand">Mehendi-Complete-Hand</option>
+          <option value="Mehendi-One-Side">Mehendi-One-Side</option>
+              </select>
+          <input type="submit" value="submit" >
+      </form>
+  </div>
+</div>
+
+
+                    <div id="overlay-2">
+  <div id="text">
+      <form action="" method="post" onsubmit="return validateForm()" name="Mehendi">
+          <p>Date: <input type="text" id="datepicker-2" name="date"required autocomplete="off"></p>
+          <p>Time:
+          <select name="Time">
+          <option value="12:00 PM - 4:00 PM">12:00 PM - 4:00 PM</option>
+          <option value="6:00 PM - 8:00 PM">6:00 PM - 8:00 PM</option>
+              <option value="9:00 PM - 10:30 PM">9:00 PM - 10:30 PM</option>
+        </select>
+          </p>
+          <p>Select your category</p>
+          <select name="design">
+       <option value="Hair-Style-Puff">Hair-Style-Puff</option>
+      <option value="Hair-Style-French">Hair-Style-French</option>
+      <option value="Hair-Style-Side-French">Hair-Style-Side-French</option>
+      <option value="Hair-Style-Fish">Hair-Style-Fish</option>
+      <option value="Hair-Style-Waterfall">Hair-Style-Waterfall</option>
+              </select>
+          <input type="submit" value="submit" >
+      </form>
+  </div>
+</div>
+
+                              <div id="overlay-3">
+  <div id="text">
+      <form action="" method="post" onsubmit="return validateForm()" name="Mehendi">
+          <p>Date: <input type="text" id="datepicker-3" name="date"required autocomplete="off"></p>
+          <p>Time:
+          <select name="Time">
+          <option value="12:00 PM - 4:00 PM">12:00 PM - 4:00 PM</option>
+          <option value="6:00 PM - 8:00 PM">6:00 PM - 8:00 PM</option>
+              <option value="9:00 PM - 10:30 PM">9:00 PM - 10:30 PM</option>
+        </select>
+          </p>
+          <p>Select your category</p>
+          <select name="design">
+      <option value="Make-Up-Light">Make-Up-Light</option>
+      <option value="Make-Up-Party">Make-Up-Party</option>
+              </select>
+          <input type="submit" value="submit" >
+      </form>
+  </div>
+</div>
+
+          <script>
+              function on_1() {
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById('a1').checked=true;
+}
+function on_2() {
+  document.getElementById("overlay-1").style.display = "block";
+
+}
+function on_3() {
+  document.getElementById("overlay-2").style.display = "block";
+
+}
+function on_4() {
+  document.getElementById("overlay-3").style.display = "block";
+
+}
+          </script>
+
+
+
+
+
+          <center><footer style="background-color: black; overflow:auto;">
+            <p style="color:whitesmoke; font-family: 'Montserrat'; font-size: 35px;padding: 1%;">Contact Us:</p>
+
+              <p style="color:white; font-family: 'Montserrat'; font-size: 25px;padding:8px;">M.Pranay: 8919345427</p>
+            </font>
+
+          </footer></center>
+
+
+
+
+
+          </body>
+          </html>

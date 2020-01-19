@@ -20,6 +20,7 @@ body
     background-size:cover;
     background-repeat: no-repeat;
     font-family:Arial;
+    padding: 3%;
 }
 .wrap
 {
@@ -39,40 +40,17 @@ H4
    text-align:center;
 }
 </style>
-<body>  
-        <!-- nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">Navbar</a>
-        
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>     
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Become a Free Lancer</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
-            </form>
-          </div>
-        </nav>
+<body>
+
         <!-- nav bar ends -->
-        
+
 <div class="wrap">
 <H4>Register here</H4>
 <!-- <form> -->
     <!-- Textfield with Floating Label -->
 
 <form action="/registration" method="post">
-    
+
 
     <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" id="sample3">
@@ -80,7 +58,7 @@ H4
       </div> -->
 
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" id="sample3" name="e-mail">
+        <input class="mdl-textfield__input" type="text" id="sample3" name="e-mail" required>
         <label class="mdl-textfield__label" for="sample3">Email-id</label>
       </div>
       <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -88,11 +66,11 @@ H4
         <label class="mdl-textfield__label" for="sample3">User Name</label>
       </div> -->
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="Password" id="sample3" name="password">
+        <input class="mdl-textfield__input" type="Password" id="sample3" name="password" required>
         <label class="mdl-textfield__label" for="sample3">Password</label>
       </div>
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="Password" id="sample3" name="password-1">
+        <input class="mdl-textfield__input" type="Password" id="sample3" name="password-1" required>
         <label class="mdl-textfield__label" for="sample3">Re-type Password</label>
       </div>
 
@@ -100,22 +78,10 @@ H4
       <div style="text-align: center;">
 <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" value="Register">
 </div>
-  
-  
+
+
   </form>
-  
-<!-- <input type="text" placeholder="First Name" required>
-<input type="text" placeholder="last Name" required>
-<input type="text" placeholder="Phone Number" required>
-<input type="text" placeholder="Age" required>
-<input type="text" placeholder="Email" required>
-<input type="text" placeholder="User Name" required>
-<input type="password" placeholder="Password" required>
-<input type="password" placeholder="Re-enter Password" required>
-<input type="text" placeholder="Hostel Block Name" required>
-<input type="text" placeholder="Room Number" required>
-<input type="submit" value="submit"> -->
-<!-- </form> -->
+</div>
 </body>
 </html>
 

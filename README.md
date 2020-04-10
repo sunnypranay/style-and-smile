@@ -12,9 +12,6 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install require
 pip install -r /path/to/requirements.txt
 ````
 
-## Usage
-
-[Click](http://bit.ly/snsgitam) here to see the website.
 
 ## Contributing
 

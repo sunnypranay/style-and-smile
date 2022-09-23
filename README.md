@@ -2,7 +2,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
 
-Style and Smile is a web-based application that is intended to provide services like (Mehendi, Nail-Art, Hair-Style, Make-Up) to girls hostel in gitam Vizag.
+Style and Smile is a web-based application that is intended to provide services like (Mehandi, Nail-Art, Hair-Style, Make-Up) to girls hostel in gitam Vizag.
 
 ## Requirements 
 

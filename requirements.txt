@@ -40,7 +40,7 @@ s3transfer==0.2.1
 six==1.13.0
 termcolor==1.1.0
 urllib3==1.25.7
-Werkzeug==0.16.0
+Werkzeug==2.2.3
 win-inet-pton==1.1.0
 wincertstore==0.2
 wrapt==1.11.2
